@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Outfit:wght@400;600&family=Raleway:wght@100;200;300;400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Open+Sans:wght@300;400;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+body{
+    background-color: hsl(217, 28%, 15%);
+    overflow-x: hidden;
+}
+html{
+    font-size: 12px;
+}
+header{
+    height: 15vh;
+    width: 100vw;
+    display: flex;
+}
+ul{
+    display: flex;
+    
+    gap: 30px;
+}
+ul li, a{
+    list-style: none;
+    text-decoration: none;
+    color: rgb(226, 217, 217);
+    font-size: 1.3rem;
+}
+.Nav-Left{
+    padding-left: 30px;
+    width: 25vw;
+    justify-content: center;
+}
+.Nav-Right{
+    width: 75vw;
+    justify-content: flex-end;
+    padding-right: 5vw;
+}
+
+main{
+    width: 100vw;
+    height: 75vh;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.Bold-Intro, .Bold-Card, .Bold-Info{
+    color:rgb(240, 232, 232);
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+    
+}
+article{
+    flex-direction: column;
+    align-items: center;
+}
+.Paragraph-Intro, .Paragraph-Card, .Paragraph-Info{
+    padding-top: 20px;
+    color:rgb(211, 204, 204);
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
+input{
+    margin-top: 30px;
+    border: none;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, rgb(68, 209, 209), rgb(21, 169, 202));
+    width: 240px;
+    height: 50px;
+    color: white;
+    font-weight: 700;
+}
+section{
+    margin-top: 200px;
+    width: 100vw;
+    height: 80vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3vw;
+}
+::-webkit-scrollbar{
+    width: 20px;
+    background-image: linear-gradient(to bottom,  hsl(214, 51%, 21%), hsl(217, 28%, 15%));
+    border-radius: 20px
+}
+.Card-Section{
+    width: 35vw;
+    height: 37vh;
+    min-height: 300px;
+    flex-wrap: wrap;
+}
+section{
+    flex-wrap: wrap;
+}
+.Image-Card{
+    margin: 15px auto 15px auto;
+    width: 100px;
+    height: 100px;
+}
+.Bold-Card{
+    font-size: 2rem;
+}
+.Section-Cards{
+    width: 85vw;
+}
+.Paragraph-Card{
+    font-size: 1.3rem;
+    color:rgb(211, 204, 204);
+    letter-spacing: -0.4px;
+    line-height: 2.3rem;
+    font-weight: 300;
+}
+
+
+.Image-Png{
+    margin-left: 4vw;;
+    width: 80%;
+    height: 90%;
+}
+
+.Nav-Left, .Nav-Right,  .Image-Card, .Section-Center, .Section-Info, main, article, section{
+    display: flex;
+    align-items: center;
+}
+.Section-Info{
+    height: 50vh;
+    width: 100vw;
+    justify-content: center;
+}
+.Image-Info{
+    margin-top: 50px;
+    width: 80%;
+    height: 80%;
+    min-width: 286px;
+}
+.Section-Center{
+    height: 100%;
+    width: 80vw;
+    justify-content: center;
+}
+.Section-Info-Left{
+    height: 80%;
+    width: 35vw;
+}
+.Section-Info-Right{
+    width: 45vw;
+}
+.Paragraph-Info{
+    line-height: 1.2rem;
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width: 880px){
+    section{
+        margin-top: 2vh;
+        height: 180vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .Bold-Info{
+        line-height: 26px;
+    }
+    .Header-Logo{
+        width: 120px;
+        height: 30px;
+        margin-left: 10px;
+    }
+    html{
+        font-size: 10px;
+    }
+    .Section-Center{
+        margin-top: 50px;
+        height: 650px;
+        flex-direction: column-reverse; 
+    }
+    .Section-Info-Left{
+        width: 85vw;
+        display: flex;
+        justify-content: center;
+        height: 335px;
+    }
+    .Image-Info{
+        height: 250px;
+        width: 350px;
+    }
+}
+@media screen and (max-width: 500px){
+    html{
+        font-size: 9px;
+    }
+    section{
+        margin-top: -20px;
+    }
+    .Card-Section{
+        width: 70vw;
+    }
+    
+}
