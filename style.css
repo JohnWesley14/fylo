@@ -7,7 +7,8 @@
     font-family: 'Raleway', sans-serif;
 }
 body{
-    background-color: hsl(217, 28%, 15%);
+    
+    background-color: hsl(218, 28%, 13%);
     overflow-x: hidden;
 }
 html{
@@ -17,11 +18,14 @@ header{
     height: 15vh;
     width: 100vw;
     display: flex;
+    background-color: hsl(217, 28%, 15%);
 }
 ul{
     display: flex;
-    
-    gap: 30px;
+    gap: 20px;
+}
+.Header-Logo{
+    cursor: pointer;
 }
 ul li, a{
     list-style: none;
@@ -41,11 +45,14 @@ ul li, a{
 }
 
 main{
+    background-image: url(images/bg-curvy-desktop.svg);
+     background-size: cover;
+    background-position: -1209px ;
     width: 100vw;
     height: 75vh;
     justify-content: center;
     flex-direction: column;
-    
+    background-color: hsl(217, 28%, 15%);
 }
 .Bold-Intro, .Bold-Card, .Bold-Info{
     color:rgb(240, 232, 232);
@@ -78,31 +85,31 @@ input{
     font-weight: 700;
 }
 section{
-    margin-top: 200px;
+    background-color: hsl(218, 28%, 13%);
+    padding-top: 100px;
     width: 100vw;
-    height: 80vh;
+    height: 800px;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 3vw;
+    gap: 20px;
+    z-index: 2;
 }
 ::-webkit-scrollbar{
     width: 20px;
-    background-image: linear-gradient(to bottom,  hsl(214, 51%, 21%), hsl(217, 28%, 15%));
+    background-image: linear-gradient(to bottom,  hsl(214, 47%, 23%),  hsl(218, 28%, 13%));
     border-radius: 20px
 }
 .Card-Section{
     width: 35vw;
-    height: 37vh;
+    height: 300px;
     min-height: 300px;
-    flex-wrap: wrap;
-}
-section{
     flex-wrap: wrap;
 }
 .Image-Card{
     margin: 15px auto 15px auto;
     width: 100px;
     height: 100px;
+    color: cyan;
 }
 .Bold-Card{
     font-size: 2rem;
@@ -112,13 +119,12 @@ section{
 }
 .Paragraph-Card{
     font-size: 1.3rem;
-    color:rgb(211, 204, 204);
+    color:rgb(189, 205, 207);
     letter-spacing: -0.4px;
-    line-height: 2.3rem;
+    line-height: 2.1rem;
     font-weight: 300;
+
 }
-
-
 .Image-Png{
     width: 300px;
     height: 250px;
@@ -133,15 +139,13 @@ section{
     align-items: center;
 }
 .Section-Info{
-    height: 50vh;
     width: 100vw;
     justify-content: center;
-    margin-top: 100px;
+    background-color: hsl(218, 28%, 13%);
 }
 .Image-Info{
-    margin-top: 50px;
     width: 300px;
-    height: 248px;
+    height: 285px;
     min-width: 286px;
     margin-left: 20px;
 }
@@ -149,46 +153,149 @@ section{
     height: 100%;
     width: 80vw;
     justify-content: center;
+    background-color: hsl(218, 28%, 13%);
 }
 .Section-Info-Left{
     display: grid;
     place-items: center;
     height: 80%;
     width: 35vw;
+    background-color: hsl(218, 28%, 13%);
 }
 .Section-Info-Right{
     width: 45vw;
+    height: 100%;
+    display: grid;
+    place-items: center;
+
+}
+.Section-Info-Right a{
+    color: rgb(29, 186, 217);
+    text-decoration: underline;
+    margin-top: 10px;
+    text-align: center;
+    display: block;
 }
 .Paragraph-Info{
-    line-height: 1.2rem;
-    font-size: 1.3rem;
+    line-height: 1.1rem;
+    font-size: 1.2rem;
+    text-align: left;
+}
+.Section-Text{
+    word-wrap: break-word;
+}
+.Bottom-Site{
+    width: 100vw;
+    height: 645px;
+}
+.Bottom-Mid{
+    height: 300px;
+    flex-wrap: wrap;
+}
+.Bottom-Cards{
+    margin-top: 50px;
+    min-width: 300px;
+    max-height: 150px;
+    background-color: hsl(219, 30%, 18%);
+}
+.Bottom-Cards p{
+    color:rgb(232, 239, 240);
+}
+.Bottom-Cards h4{
+    color: rgb(236, 234, 234);
+    font-weight: 400;
+}
+.Bottom-Cards h6{
+    color: gray;
+}
+.Bottom-Texts{
+    max-width: 300px;
+    height: 145px;
+    max-height: 180px;
+    padding: 15px 10px 10px 10px;
+}
+.Bottom-Box-Cards{
+    margin-top: 60px;
+    display: flex;
+    width: calc(100vw - 20px);
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.Image-Profile{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+.Bottom-Cards-Info-Down{
+    margin-top: 35px;
+    display: flex;
+
+}
+.Bottom-Cards-Text-Down{
+    margin-left: 10px;
+}
+footer{
+    height: 300px;
+    width: 100vw;
+    background-color: hsl(216, 53%, 9%);
+    display: flex;
+    align-items: center;
+}
+.Footer-Box-Texts{
+    height: 300px;
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    
+    justify-content: space-between;
+    bottom: 30px;
+}
+.Footer-Logo{
+    width: 30vw;
+    padding-left: 30px;
+}
+footer ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.List-Four{
+    
+    display: flex;
+    flex-direction: row;
 }
 
 @media screen and (max-width: 880px){
     section{
-        margin-top: 2vh;
-        height: 180vh;
+        height: 1400px;
         display: flex;
         flex-direction: column;
     }
+    
     .Bold-Info{
         line-height: 26px;
     }
     .Header-Logo{
         width: 120px;
-        height: 30px;
+        height: 37px;
         margin-left: 10px;
+    }
+
+    .Image-Card{
+        width: 98px;
+        height: 92px;
     }
     html{
         font-size: 10px;
     }
     .Section-Center{
-        margin-top: 50px;
         height: 650px;
         flex-direction: column-reverse; 
     }
     .Section-Info-Left{
-        width: 85vw;
+        width: 100vw;
         display: flex;
         justify-content: center;
         height: 335px;
@@ -197,16 +304,75 @@ section{
         height: 250px;
         width: 350px;
     }
+    .Section-Text{
+        margin-bottom: -35px;
+    }
 }
-@media screen and (max-width: 500px){
+@media screen and (max-width: 570px){
     html{
         font-size: 9px;
+    }
+    .Bold-Intro{
+        font-size: 2.3rem;
+    }
+    
+    .Paragraph-Intro{
+        line-height: 2.3rem;
+        color:rgb(163, 167, 168);
     }
     section{
         margin-top: -20px;
     }
+    .Header-Logo{
+        padding-left: 15px;
+    }
     .Card-Section{
         width: 70vw;
     }
-    
+    .Nav-Right{
+        padding-right:38px;
+    }
+    footer{
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 550px;
+        align-items: flex-start;
+    }
+    .Footer-Box-Texts{
+        width: 100vw;
+        height: 320px;
+        gap: 50px;
+        flex-direction: column;
+        padding-left: 25px;
+        align-items: flex-start;
+    }
+    ion-icon{
+        width: 20px;
+        height: 20px;
+    }
+    .Footer-Logo{
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    .Footer-Logo{
+        padding-left: 0px;
+    }
+    .Image-Info{
+        margin: 0;
+    }
+    .Bottom-Cards-Info-Down{
+        margin-top: 27px;
+    }
+    .Bottom-Texts{
+        max-height: 120px;
+    }
+    .Bottom-Box-Cards{
+        margin-top: 0;
+    }
+    .Section-Center{
+        margin-top: -70px;
+    }
+    .Nav-Left > img{
+        height: 30px;
+    }
 }
