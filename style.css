@@ -120,11 +120,14 @@ section{
 
 
 .Image-Png{
-    margin-left: 4vw;;
-    width: 80%;
-    height: 90%;
+    width: 300px;
+    height: 250px;
+    margin-bottom: 20px;
 }
-
+.Image-Main{
+    display: grid;
+    place-items: center;
+}
 .Nav-Left, .Nav-Right,  .Image-Card, .Section-Center, .Section-Info, main, article, section{
     display: flex;
     align-items: center;
@@ -133,12 +136,14 @@ section{
     height: 50vh;
     width: 100vw;
     justify-content: center;
+    margin-top: 100px;
 }
 .Image-Info{
     margin-top: 50px;
-    width: 80%;
-    height: 80%;
+    width: 300px;
+    height: 248px;
     min-width: 286px;
+    margin-left: 20px;
 }
 .Section-Center{
     height: 100%;
@@ -146,6 +151,8 @@ section{
     justify-content: center;
 }
 .Section-Info-Left{
+    display: grid;
+    place-items: center;
     height: 80%;
     width: 35vw;
 }
